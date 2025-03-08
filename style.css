@@ -30,29 +30,40 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    
+}
+
+.req {
+    gap: 10px;
 }
 
 button {
-    width: 250px;
+    display: flex;
+    flex-wrap: nowrap;
     font-family: 'TT Lakes Regular';
     font-size: 16px;
     border: none;
     background-color: #F8F8F8;
     color: #7E7E82;
     cursor: pointer;
+    
 }
 
 .slider {
-    width: 250px;
-    height: 38px;
+    width: auto;
+    padding: 0px 10px;
+    margin: 2px 2px;
+    width: max-content;
+    
 }
 
 .slider:hover {
+    margin: 0px 0px;
     font-family: 'TT Lakes Regular';
     border: 2px solid #B8FFEC;
     border-radius: 5px 5px 5px 5px;
     background-color: #ffffff;
+    align-items: center;
 }
 
 a:hover {
@@ -108,20 +119,18 @@ a:hover {
     gap: 15px;    
 }
 
-
 .main {
     margin-top: 25px;
 }
 
 .main__banner {
-    margin-top: 5%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .title-name {
-    margin-left: 25px;
+    padding-left: 20px;
 }
 
 
@@ -137,31 +146,26 @@ a:hover {
 }
 
 .main__slider__ul {
-    height: 55px;
     margin-top: 15px;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: nowrap;
     overflow: auto;
+    padding: 0px 30px;
+    
 }
 
 .main__blog {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     flex-flow: column wrap;
-    margin-top: 15px;
-    gap: 15px;
-    justify-content: space-between;
+    margin-top: 20px;
+    
 }
 
 .main__blog__article {
-    margin-right: 20px;
-    margin-top: 15px;
     font-size: 14px;
-    padding-left: 20px;
-    overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .main__blog__read {
@@ -171,17 +175,29 @@ a:hover {
     justify-content: start;
     gap: 5px;
     color: #1B1C21;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+.main__blog__maxi-pic {
+    margin-left: auto;
+    width: 100vh;
+    height: 100vh;
+    background-image: url('img/maxi-pic.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main__blog__mini-pic {
+
 }
 
 .photo {
     width: 100%;
 }
 
-.main__blog__maxi-pic {
-    display: none;
-}
-
 @media (max-width: 460px) {
+
     .header__imgs__feedback__comun {
         display: none;
          }
@@ -190,26 +206,63 @@ a:hover {
     .third-phar {
         display: none;
     }
-
 }
 
-@media (max-width: 750px) {
-    .second-phar,
+@media (max-width: 779px) {
+
     .third-phar {
         display: none;
     }
+
+    .title-name {
+        padding: 0px 5px;
+    }
+
+    .main__blog {
+        padding: 0px 0px;
+    }
+
+    .main__blog__maxi-pic {
+        display: none;
+    }
+
+    .main__blog__read {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-left: 3px;
+    }
+
+    .main__blog__article {
+        margin: 0px 15px;
+        width: 90vw;
+        height: auto;
+    }
+
+    .main__blog__mini-pic {
+        width: 100%;
+    }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 780px) {
+
     .main__blog__article {
         width: 40%;
-        height: 70%;
+        height: 40%;
+    }
+
+    .second-phar {
+        display: inline;
+    }
+
+    .title-name {
+        padding-left: 15px;
     }
 
     .main__blog {
         justify-content: start;
         height: 350px;
         flex-flow: column wrap;
+        padding: 0px 30px;
     }
 
     .main__blog__mini-pic {
@@ -217,8 +270,7 @@ a:hover {
     }
 
     .main__blog__read {
-        margin-top: -80px;
-        padding-left: 15px;
+        margin-left: -5px;
     }
 
     .third-phar {
@@ -226,21 +278,17 @@ a:hover {
     }
 
     .main__blog__maxi-pic {
-        display: block;
-        height: 100%;
-        width: 50%;
-        background-image: url(img/maxi-pic.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        overflow: hidden;
+        width: 50vw;
     }
+
 }
 
 
 @media (min-width: 1043px) {
 
     .main__blog__article {
-        width: 40%;
+        width: 45%;
+        height: 40%;
     }
 
     .header {
@@ -248,7 +296,7 @@ a:hover {
     }
 
     .main__slider__ul {
-        height: 100px;
+        height: 70px;
         flex-wrap: wrap;
     }
 
@@ -264,10 +312,8 @@ a:hover {
         display: inline;
     }
 
-    .main__blog {
-    }
-
     .main__blog__read {
+        margin-top: 20px;
         padding-left: 20px;
     }
 
@@ -277,16 +323,4 @@ a:hover {
         justify-content: end;
     }
 
-    .main__blog__maxi-pic {
-        overflow: visible;
-        width: 50%;
-    }
-
-    /* .main__blog__maxi-pic {
-        height: 70%;
-        width: 100%;
-        background-image: url(img/maxi-pic.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    } */
 }
