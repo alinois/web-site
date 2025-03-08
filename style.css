@@ -1,24 +1,24 @@
 
 @font-face {
-    font-family: "TT Lakes Bold";
+    font-family: "TT Lakes";
     font-style: bold;
     src: local("TT Lakes Bold"),
-         url("/fonts/TTLakes/TTLakes-Bold.woff2") format("woff2"),
+         url("/fonts/TTLakes/TTLakes-Bold.ttf") format("ttf"),
          url("/fonts/TTLakes/TTLakes-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: "TT Lakes Regular";
+    font-family: "TT Lakes";
     font-style: normal;
     src: local("TT Lakes Regular"),
-         url("/fonts/TTLakes/TTLakes-Regular.woff2") format("woff2"),
+         url("/fonts/TTLakes/TTLakes-Regular.ttf") format("ttf"),
          url("/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
 }
 
 body {
     background-color: #F8F8F8;
     margin: 0;
-    font-family: "TT Lakes Regular";
+    font-family: TT Lakes normal;
 }
 
 ul {
@@ -43,7 +43,7 @@ button {
     font-family: 'TT Lakes Regular';
     font-size: 16px;
     border: none;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     color: #7E7E82;
     cursor: pointer;
     
@@ -133,11 +133,10 @@ a:hover {
     padding-left: 20px;
 }
 
-
 .main__banner__title {
     color: #1B1C21;
     font-size: 28px;
-    font-family: "TT Lakes Bold";
+    font-family: TT Lakes Bold;
     display: flex;
     align-items: center;
     justify-content: start; 
@@ -169,6 +168,7 @@ a:hover {
 }
 
 .main__blog__read {
+    width: 80%;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -283,12 +283,12 @@ a:hover {
 
 }
 
-
 @media (min-width: 1043px) {
 
     .main__blog__article {
         width: 45%;
-        height: 40%;
+        height: auto;
+        margin-bottom: 0;
     }
 
     .header {
@@ -313,8 +313,8 @@ a:hover {
     }
 
     .main__blog__read {
-        margin-top: 20px;
-        padding-left: 20px;
+        margin-top: 10px;
+        padding-left: 5px;
     }
 
     .main__banner__request {
