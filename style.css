@@ -1,24 +1,21 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
-        url('/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    src: url('TTLakes-Bold.woff2') format('woff2'),
+        url('TTLakes-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
- @font-face {
-        font-family: 'TT Lakes';
-        src: url('TTLakes-Regular.eot');
-        src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-            url('/fonts/TTLakes/TTLakes-Regular.eot') format('embedded-opentype'),
-            url('/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
-            url('/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
- }
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.woff2') format('woff2'),
+        url('TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 body {
     background-color: #F8F8F8;
@@ -78,6 +75,7 @@ button {
     background-color: #f8f8f8;
     color: #7E7E82;
     cursor: pointer;
+    padding: 5px 20px;
     
 }
 
@@ -97,6 +95,7 @@ button {
     border-radius: 5px 5px 5px 5px;
     background-color: #ffffff;
     align-items: center;
+    padding: 5px 20px;
 }
 
 a:hover {
@@ -185,6 +184,7 @@ a:hover {
     flex-wrap: nowrap;
     overflow: auto;
     padding: 0px 30px;
+    height: 60px;
     
 }
 
