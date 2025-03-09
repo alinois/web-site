@@ -1,26 +1,30 @@
-
 @font-face {
-    font-family: "TT Lakes Bold";
-    font-style: bold;
-    src: local("TT Lakes Bold"),
-         url("/fonts/TTLakes/TTLakes-Bold.ttf") format("truetype"),
-         url("/fonts/TTLakes/TTLakes-Bold.woff") format("woff"),
-         url("/fonts/TTLakes/TTLakes-Bold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "TT Lakes Regular";
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-    src: local("TT Lakes Regular"),
-         url("/fonts/TTLakes/TTLakes-Regular.ttf") format("truetype"),
-         url("/fonts/TTLakes/TTLakes-Regular.woff") format("woff"),
-         url("/fonts/TTLakes/TTLakes-Regular.woff2") format("woff2");
 }
+
+ @font-face {
+        font-family: 'TT Lakes';
+        src: url('TTLakes-Regular.eot');
+        src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+            url('/fonts/TTLakes/TTLakes-Regular.eot') format('embedded-opentype'),
+            url('/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+            url('/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+ }
 
 body {
     background-color: #F8F8F8;
     margin: 0;
-    font-family: "TT Lakes Regular";
+    font-family: "TT Lakes";
+    font-weight: normal;
 }
 
 summary {
@@ -67,7 +71,8 @@ li {
 button {
     display: flex;
     flex-wrap: nowrap;
-    font-family: 'TT Lakes Regular';
+    font-family: "TT Lakes";
+    font-weight: normal;
     font-size: 16px;
     border: none;
     background-color: #f8f8f8;
@@ -86,7 +91,8 @@ button {
 
 .slider:hover {
     margin: 0px 0px;
-    font-family: 'TT Lakes Regular';
+    font-family: "TT Lakes";
+    font-weight: normal;
     border: 2px solid #B8FFEC;
     border-radius: 5px 5px 5px 5px;
     background-color: #ffffff;
@@ -163,7 +169,8 @@ a:hover {
 .main__banner__title {
     color: #1B1C21;
     font-size: 28px;
-    font-family: TT Lakes Bold;
+    font-family: "TT Lakes";
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: start; 
