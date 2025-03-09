@@ -3,22 +3,24 @@
     font-family: "TT Lakes Bold";
     font-style: bold;
     src: local("TT Lakes Bold"),
-         url("/fonts/TTLakes/TTLakes-Bold.ttf") format("ttf"),
-         url("/fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+         url("/fonts/TTLakes/TTLakes-Bold.ttf") format("truetype"),
+         url("/fonts/TTLakes/TTLakes-Bold.woff") format("woff"),
+         url("/fonts/TTLakes/TTLakes-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "TT Lakes Regular";
     font-style: normal;
     src: local("TT Lakes Regular"),
-         url("/fonts/TTLakes/TTLakes-Regular.ttf") format("ttf"),
-         url("/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+         url("/fonts/TTLakes/TTLakes-Regular.ttf") format("truetype"),
+         url("/fonts/TTLakes/TTLakes-Regular.woff") format("woff"),
+         url("/fonts/TTLakes/TTLakes-Regular.woff2") format("woff2");
 }
 
 body {
     background-color: #F8F8F8;
     margin: 0;
-    font-family: TT Lakes Regular;
+    font-family: "TT Lakes Regular";
 }
 
 summary {
