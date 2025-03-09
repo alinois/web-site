@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: "TT Lakes";
+    font-family: "TT Lakes Bold";
     font-style: bold;
     src: local("TT Lakes Bold"),
          url("/fonts/TTLakes/TTLakes-Bold.ttf") format("ttf"),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: "TT Lakes";
+    font-family: "TT Lakes Regular";
     font-style: normal;
     src: local("TT Lakes Regular"),
          url("/fonts/TTLakes/TTLakes-Regular.ttf") format("ttf"),
@@ -18,7 +18,32 @@
 body {
     background-color: #F8F8F8;
     margin: 0;
-    font-family: TT Lakes normal;
+    font-family: TT Lakes Regular;
+}
+
+summary {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+summary::after {
+    content: 'Читать далее';
+}
+
+details[open] > summary::after
+{
+  content: 'Скрыть текст';
+  color: gray;
+}
+
+.main__blog__article-more {
+    margin-top: 10px;
+    width: 50%;
+    font-size: 14px;
 }
 
 ul {
@@ -181,15 +206,24 @@ a:hover {
 
 .main__blog__maxi-pic {
     margin-left: auto;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
+    background-size: 100% 100%;
     background-image: url('img/maxi-pic.jpg');
     background-size: contain;
+    overflow: visible;
+    background-position: right;
     background-repeat: no-repeat;
 }
 
 .main__blog__mini-pic {
 
+}
+
+.last-pic {
+    display: none;
+    width: 50%;
+    margin-left: auto;
 }
 
 .photo {
@@ -248,6 +282,7 @@ a:hover {
     .main__blog__article {
         width: 40%;
         height: 40%;
+        margin-bottom: 20px;
     }
 
     .second-phar {
@@ -270,6 +305,7 @@ a:hover {
     }
 
     .main__blog__read {
+        margin-top: 5px;
         margin-left: -5px;
     }
 
@@ -281,6 +317,16 @@ a:hover {
         width: 50vw;
     }
 
+    .last-pic {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 824px) {
+    .main__blog__article {
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width: 1043px) {
@@ -288,7 +334,7 @@ a:hover {
     .main__blog__article {
         width: 45%;
         height: auto;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .header {
@@ -302,10 +348,6 @@ a:hover {
 
     button {
         width: 100%;
-    }
-
-    .main__blog__mini-pic {
-        display: none;
     }
 
     .third-phar {
