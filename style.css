@@ -81,7 +81,7 @@ button {
 
 .slider {
     width: auto;
-    padding: 0px 10px;
+    padding: 5px 20px;
     margin: 2px 2px;
     width: max-content;
     
@@ -180,11 +180,9 @@ a:hover {
 .main__slider__ul {
     margin-top: 15px;
     display: flex;
-    gap: 15px;
     flex-wrap: nowrap;
     overflow: auto;
     padding: 0px 30px;
-    height: 60px;
     
 }
 
@@ -351,7 +349,7 @@ a:hover {
     }
 
     .main__slider__ul {
-        height: 70px;
+        height: 80px;
         flex-wrap: wrap;
     }
 
